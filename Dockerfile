@@ -63,7 +63,7 @@ EXPOSE 8080 4848
 # deploy an application to the container
 # example below - it uses the auto-deploy service of Glassfish
 # ADD https://github.com/yoshioterada/JavaEE7-App-On-Docker/blob/master/JavaEE7-App-On-Docker/target/JavaEE7-App-On-Docker-1.0-SNAPSHOT.war?raw=true /usr/local/glassfish4/glassfish/domains/domain1/autodeploy/JavaEE7-App-On-Docker.war
-ADD mrp.war /usr/local/glassfish4/glassfish/domains/domain1/autodeploy/mrp.war
+ADD JavaEE7-App-On-Docker-1.0-SNAPSHOT.war /usr/local/glassfish4/glassfish/domains/domain1/autodeploy/JavaEE7-App-On-Docker-1.0-SNAPSHOT.war
 
 #ENTRYPOINT ["/usr/local/bin/start-gf.sh"]
 
