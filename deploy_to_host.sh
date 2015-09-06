@@ -10,4 +10,4 @@ ssh ${SSH_LOGIN} "sudo docker ps -q -f status=exited | xargs --no-run-if-empty s
 echo "Delete exited images"
 ssh ${SSH_LOGIN} "sudo docker images -q | xargs --no-run-if-empty sudo docker rmi"
 echo "Run container"
-ssh ${SSH_LOGIN} sudo docker run -d koemu/webapp -p 80:8080 /bin/bash --link mongodb:mongodb
+ssh ${SSH_LOGIN} sudo docker run -p 80:8080 -d koemu/webapp /bin/bash --link mongodb:mongodb
