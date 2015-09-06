@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Server info
 SSH_LOGIN=team4@207.46.132.125
 
 echo "STOP"
