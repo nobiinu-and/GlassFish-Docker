@@ -2,5 +2,5 @@ LATEST_ARTIFACT=/home/team4/myagent/_work/build/07b0c7f395008351ee66266376a333db
 cp -pf $LATEST_ARTIFACT .
 
 sudo docker build --rm -t koemu/webapp .
-sudo docker login --username=koemu --password=56805181 --email=netuser@mx.koemu.com
+sudo docker login --username=xxx --password=xxx --email=xxxxx
 sudo docker push koemu/webapp
